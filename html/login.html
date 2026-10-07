@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHOP.CO | Log In</title>
+  <meta name="description" content="Log in to your SHOP.CO account.">
+  <link rel="StyleSheet" href="../css/main2.css">
+
+</head>
+<body>
+  <header>
+   <h2 id="title">Shop.Co</h2>
+ </header>
+  <main class="auth">
+    <div class="container">
+      <div class="auth__card">
+        <div>
+          <p class="form__error" id="login-form-error" aria-live="polite"></p>
+          <h1 class="auth__title">Log In</h1>
+          <p class="auth__subtitle">Welcome back! Log in to continue shopping.</p>
+        </div>
+        
+        
+
+        <form class="form" id="login-form" novalidate>
+          <div class="form__group">
+            <label class="form__label" for="login-email">Email :</label>
+            <input class="form__input" type="email" id="login-email" name="email" placeholder="you@example.com" autocomplete="email" required>
+            <p class="form__error" id="login-email-error" aria-live="polite"></p>
+          </div>
+          <div class="form__group">
+            
+              <label class="form__label" for="login-password">Password :</label>
+              <div >
+                 <input class="form__input" type="password" id="login-password" name="password" placeholder="Enter your password" autocomplete="current-password" required>
+                <a class="form__forgot" href="../html/signup.html">Forgot password?</a>
+              </div>
+              
+              
+            <p  class="form__error" id="login-password-error" aria-live="polite"></p>
+          </div>
+         
+          <div id="btn-container">
+              
+              <button type="submit" class="btn btn--primary btn--block">Log In</button>
+          </div>
+        </form>
+
+        <div class="login_end">
+          <p class="auth__switch">Don't have an account? <a href="signup.html">Sign up</a></p>
+         <p class="auth__switch">Go Back to Welcome page   <a href="index.html">Welcome</a></p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+  <script src="../JS/login.js"></script>
+</body>
+</html>

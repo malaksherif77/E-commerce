@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHOP.CO | Sign Up</title>
+  <meta name="description" content="Create your SHOP.CO account and get 20% off your first order.">
+  <link rel="StyleSheet" href="../css/main2.css">
+</head>
+<body>
+  <header>
+   <h2 id="title">Shop.Co</h2>
+ </header>
+  <main class="auth">
+    <div class="container">
+      <div class="auth__card">
+        
+        <div>
+          <p  class="form__error" id="signup" aria-live="polite"></p>
+          <h1 class="auth__title">Sign Up</h1>
+          <p class="auth__subtitle">Create your account to start shopping.</p>
+        </div>
+        <form class="form" id="signup-form" novalidate>
+          <div class="form__group">
+            <label class="form__label" for="signup-email">Email :</label>
+            <input class="form__input" type="email" id="signup-email" name="email" placeholder="you@example.com" autocomplete="email" required>
+            <p class="form__error" id="signup-email-error" aria-live="polite"></p>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="signup-password">Password :</label>
+            <input class="form__input" type="password" id="signup-password" name="password" placeholder="At least 8 characters" autocomplete="new-password" required>
+            <p class="form__error"  id="signup-password-error" aria-live="polite"></p>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="signup-confirm">Confirm Password :</label>
+            <input class="form__input" type="password" id="signup-confirm" name="confirm" placeholder="Re-enter your password" autocomplete="new-password" required>
+            <p class="form__error" id="signup-confirm-error" aria-live="polite"></p>
+          </div>
+         
+          <div id="btn-container">
+              
+              <button type="submit" class="btn btn--primary btn--block">Sign Up</button>
+          </div>
+        </form>
+        <div class="signup_end">
+           <p class="auth__switch">Already have an account? <a href="login.html">Log in</a></p>
+           <p class="auth__switch">Go Back to Welcome page   <a href="index.html">Welcome</a></p>
+        </div>
+       
+      </div>
+    </div>
+  </main>
+
+ 
+
+  <script src="../JS/signup.js"></script>
+</body>
+</html>
